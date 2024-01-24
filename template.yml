@@ -15,8 +15,8 @@ Globals:
       SecurityGroupIds:
         - !Sub '{{resolve:ssm:/poja-prime-two/sg/id}}'
       SubnetIds:
-        - !Sub '{{resolve:ssm:C:/poja-prime-two/public/subnet1}}'
-        - !Sub '{{resolve:ssm:C:/poja-prime-two/public/subnet2}}'
+        - !Sub '{{resolve:ssm:/poja-prime-two/public/subnet1}}'
+        - !Sub '{{resolve:ssm:/poja-prime-two/public/subnet2}}'
     Environment:
       Variables:
         ENV: !Ref Env
